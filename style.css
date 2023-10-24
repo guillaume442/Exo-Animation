@@ -1,36 +1,7 @@
-/* #img {
-    height: 125px;
-    width: 150px;
-    background-color: blue;
-    animation: running infinite 3s ease 0s ;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: paleturquoise;
 }
-
-@keyframes running {
-    0%{
-
-    }
-    50%{
-
-    }
-    100%{
-
-    }
-} */
-
-
-/* @keyframes slidein {
-    0%{
-    transform : translate(0px,200px);
-    }
-
-    50%{
-    transform : translate(50px,200px);
-    }
-
-    100%{
-    transform : translate(100px,200px);
-    }
-} */
 
 ul {
     display: flex;
@@ -64,6 +35,55 @@ a {
     border-right: 4px solid;
 
 }
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 100px;
+    transition: color 1s, background-color 1s, font-family 1s;
+}
+
+h1:hover {
+    animation: changeStyles 5s infinite;
+}
+
+@keyframes changeStyles {
+    0% {
+       color: initial; /* Couleur de police initiale */
+       background-color: initial; /* Couleur de fond initiale */
+       font-family: initial; /* Police initiale */
+    }
+  
+    20% {
+        background-color: yellowgreen;
+        color: red;
+        font-family: 'Courier New', Courier, monospace;
+    }
+  
+    40% {
+        background-color: yellow;
+        color: bisque;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+  
+    60% {
+        background-color: aquamarine;
+        color: hotpink;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+  
+    80% {
+        background-color: khaki;
+        color: blue;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+  
+    100% {
+        background-color: green;
+        color: darksalmon;
+        font-family: "Times New Roman", serif;
+    }
+  }
 
 #allCarre {
     display: flex;
