@@ -1,0 +1,33 @@
+#img {
+    height: 125px;
+    width: 150px;
+    background-color: blue;
+    animation: running infinite 3s ease 0s ;
+}
+
+@keyframes running {
+    0%{
+
+    }
+    50%{
+
+    }
+    100%{
+
+    }
+}
+
+
+/* @keyframes slidein {
+    0%{
+    transform : translate(0px,200px);
+    }
+
+    50%{
+    transform : translate(50px,200px);
+    }
+
+    100%{
+    transform : translate(100px,200px);
+    }
+} */
